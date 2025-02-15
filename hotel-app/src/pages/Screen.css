@@ -1,0 +1,22 @@
+main { 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.controlPanel {
+    position: fixed;
+    right: 0;
+    display: flex;
+    width: 200px;
+    padding: 20px 50px;
+    justify-content: space-between;
+}
+
+.controlPanel > button {
+    font-size: var(--header);
+    height: 70px;
+    width: 70px;
+    border: 1px solid var(--text);
+    border-radius: 0;
+}

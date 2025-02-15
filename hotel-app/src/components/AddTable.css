@@ -1,0 +1,35 @@
+.title {
+    font-size: var(--title);
+    text-align: center;
+}
+
+.form-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 10px 20px;
+}
+
+.radios {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.radio-label {
+    width: fit-content;
+    &:hover {
+        color: var(--highlight);
+        transition: color 0.2s ease;
+    }
+}
+
+.radio-button:checked + .radio-label {
+    color: var(--primary);
+}
+
+
+.submit-button {
+    float: right;
+    font-size: var(--text);
+}

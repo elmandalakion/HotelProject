@@ -1,0 +1,16 @@
+### Get all users
+GET http://localhost:8080/hotel
+
+### Create a new user
+POST http://localhost:8080/student
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "dob": "1999-01-11"
+}
+
+###
+DELETE http://localhost:8080/student/3
+

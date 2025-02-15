@@ -1,0 +1,35 @@
+header {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--header);
+    font-family:'Times New Roman', Times, serif;
+    background-color: var(--card);
+    border-bottom: 1px solid var(--text);
+    padding: 5px 15px;
+}
+
+.hotel-title {
+    cursor: pointer;
+    &:hover {
+        color: var(--highlight)
+    }
+}
+
+nav {
+    font-size: var(--title);
+    display: flex;
+    column-gap: 20px;
+    padding: 0 10px;
+    font-weight: 200;
+}
+
+.stuff {
+    text-align: center;
+    font-size: var(--text);
+}
+
+span {
+    color: var(--primary)
+}

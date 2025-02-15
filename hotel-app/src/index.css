@@ -5,9 +5,85 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+  background-color: var(--background);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  /*  Colours  */
+  --primary: #54BAB9;
+  --background: #F7ECDE;
+  --text: #191715;
+  --reject: #BA545E;
+  --highlight: #9ED2C6;
+  --card: #E9DAC1;
+  /*  Sizes  */
+  --header: 40px;
+  --title: 36px;
+  --body: 24px;
+  --small: 20px;
+}
+
+*::selection{
+  background-color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+  &:hover {
+    color: var(--primary)
+  }
+}
+
+* > button {
+  border: 0;
+  background-color: transparent;
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: var(--primary);
+    color: var(--background)
+  }
+
+}
+
+* > main {
+  width: 90%;
+  padding: 0 5%;
+  display: flex;
+  font-size: var(--body);
+}
+
+* > main > .title {
+  font-size: var(--title);
+  width: 20%;
+  border-bottom: 1px solid var(--text);
+  text-align: center;
+  padding: 10px 0;
+}
+
+* > section {
+  background-color: var(--card);
+  position: absolute;
+  top: 150px;
+  width: 40%;
+  padding: 20px;
+}
+
+* > input {
+  width: 65%;
+  background-color: var(--background);
+  font-size: var(--text);
+}
+
+* > .close-x {
+  font-size: var(--text);
+  float: right;
+  &:hover {
+    background-color: transparent;
+    color: var(--reject);
+  }
 }
